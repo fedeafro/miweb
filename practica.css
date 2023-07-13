@@ -797,7 +797,7 @@ input,textarea{
 
         /**************************** @media celurares ***************************/
 
-        @media (max-width:480px){
+        @media (max-width:490px){
         nav{
             display: none;
         }
@@ -865,11 +865,13 @@ input,textarea{
         }
         .descripcion p{
             color: white;
-            letter-spacing: px;
+            letter-spacing: 1px;
             position: relative;
+            text-align: justify;
             left: -0px;
             top: -0px;
             width: 80%;
+            height: 110px;
         }
         .descripcion p:hover{
             transform: none;
@@ -886,8 +888,9 @@ input,textarea{
             top: -10px;
             left: 30px;
             font-size: 14px;
-            border: 1px dashed red;
         }
+
+        
         .info h1{
             margin-top: 40px;
             font-size: 1.9rem;
@@ -914,92 +917,125 @@ input,textarea{
         .grid3 img{
             width: 400px;
             filter: drop-shadow( 12px 33px 15px rgba(0, 0, 0, 0.493));
+        }
+
+        .img-pc img{
+            position: relative;
+            top:170px;
+            left: -30px;
+            height: 160px;
+            width: 430px;
+        }
+        .text p{
+            position: relative;
+            top: 10px;
+            font-size: 5px;
+            color: #23c1c4;
+            
+        }
+        main h2{
+            position: relative;
+            top: 30px;
+            color: #23c1c4;
+            font-size: 27px;
+        }
+
+        .texto-foto p{
+            font-size: 15px;
+            width: 340px;
+            height: 20px;
+            color: #ffffff;
+        } 
+
+        .texto-foto{
+            position: relative;
+            left: 384px;
+            width: 85%;
+            height: 160px;
+            top: 140px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.295);
+            
+        }
+        .texto-foto h2{
+            font-weight: 800;
+            letter-spacing: 8px;
+            position: relative;
+            top: -40px;
+        }
+        .form-content{
+            height: 950px;
+        }
+
+        .form-content h2{
+            width: auto;
+            position: relative;
+            top: 200px;
+        }
+            
+        .text p{
+            font-size: 17px;
+            color: #000000;
+            }
+        .card h2{
+            font-size: 30px;
             }
 
-            .img-pc img{
-                position: relative;
-                top:170px;
-                left: -30px;
-                height: 160px;
-                width: 430px;
+        input,textarea{
+            position: relative;
+            top: 300px;
+            right: 30px;
+            width: 230%;
             }
-            .text p{
+
+        label{
+            width: 130%;
+            position: relative;
+            right: 20px;
+            top: 307px;
+            }
+
+
+            #copyrightEtIcons{
                 position: relative;
-                top: 10px;
-                font-size: 5px;
-                color: #23c1c4;
+                top: 270px;
+
+            }
+
+
+
+        #copyrightEtIcons span{
+            text-align: center;
+            width: 370px;
+            font-size: 12px;
+            letter-spacing: 2px;
             
             }
-            main h2{
-                position: relative;
-                top: 30px;
-                color: #23c1c4;
-                font-size: 27px;
-                }
 
-           .texto-foto p{
-                font-size: 13px;
-                width: 300px;
-                height: 20px;
-                color: #000;
-            } 
-
-            .texto-foto{
-                position: relative;
-                left: 380px;
-                width: 80%;
-                height: 160px;
-                top: -150px;
-                font-weight: bold;
+        .btn{
+            position: relative;
+            align-self: start;
             }
-
-
-            .form-content{
-                height: 860px;
-
-
+        .trabajos{
+            position: relative;
+            top: 40px;
+            font-size: 25px;
             }
-
-            .form-content h2{
-                width: auto;
-                
+            main{
+                margin-top: 150px;
             }
-            
-            .text p{
-                font-size: 17px;
-                color: #000000;
-            }
-            .card h2{
-                font-size: 30px;
-            }
-
-            input,textarea{
-                position: relative;
-                right: 30px;
-                width: 230%;
-            }
-
-            label{
-                width: 130%;
-                position: relative;
-                right: 20px;
-            }
-            #copyrightEtIcons span{
-                text-align: center;
-                font-size: 10px;
-                letter-spacing: 2px;
-            }
-
-            .btn{
-                position: relative;
-                align-self: start;
-            }
-    
 
         }
 
 
 
+
+
+
+
+            
+
+            
 
 
 
