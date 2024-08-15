@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    display: flex;
+    justify-content: safe;
+    position: relative;
+    justify-content: center;
+    bottom: 20px;
+}
+header nav{
+    width: 100%;
+    
+}
+
+header{
+    width: 100%;
+}
+h2{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+nav{
+    background: rgba(3, 3, 3, 0.133);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 60px;
+    z-index: 5;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.25);
+}
+header li{
+    list-style-type: none;
+    height: 50px;
+    line-height: 30px;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    font-family: 'Heebo', sans-serif;
+    transition: 0.7s;
+    letter-spacing:3px;
+}
+a:hover{
+    border-bottom: 1px solid rgb(171, 171, 171);
+    color: rgb(91, 91, 91);
+    transition: 0.5s;
+    letter-spacing: 5px;
+}
+
+
+/****************imagen principal*****************/
+.banner{
+    width: 100%;
+    height: 100vh;
+    animation: banner 12s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.milogo{
+    width: 200px;
+}
+
+@keyframes banner{
+    0%, 20%{
+        background-image: url(fotos/BQ.jpg);
+    }
+    25%, 45%{
+        background-image: url(fotos/fotis-fotopoulos.jpg);
+    }
+    50%, 70%{
+        background-image: url(fotos/laptop2.jpg);
+    }
+    75%, 100%{
+        background-image: url(fotos/lucabra.jpg);
+    }
+}
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(4px);
+}
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+.info h1{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 8px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;  
+      
+}
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-shadow: 6px 8px 5px rgba(0,0,0,1); 
+    position: relative;
+    bottom:10px;
+    animation: myAnim 3s linear 0s 1 normal none;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-family: 'Orbitron', sans-serif;
+}
+h4{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    text-shadow: 6px 8px 5px rgba(0,0,0,1);
+    animation: myAnim 3s linear 0s 1 normal none;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+/***********************************inicio prersentacion**************************/
+
+.mipresentacionpng{
+    position: absolute;
+    left: 200%;
+    bottom: -155px;
+    width: 650px;
+    height: 650px;
+    filter: drop-shadow(32px 32px 15px rgba(0, 0, 0, 0.792));
+}
+
+.mipresentacionpng img{
+    width: 600px;
+}
+
+#presentacion{
+    background-image: url(fotos/castorly.jpg);
+    background-size: cover;
+    height: 716px; 
+    animation: movimiento 9s infinite linear alternate;
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left ;
+    }to{
+        background-position: top right ;
+    }
+}
+.container__cards{
+    width:25%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 140%;
+    left: 20%;
+    border-radius:10px;
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 250px;
+    margin: 10px;
+    height: 450px;
+    padding: 20px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.6);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: all 500ms;
+    background-color: rgba(74, 74, 74, 0.388);
+    backdrop-filter: blur(5px);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+.cover__card{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cover__card img{
+    width: 100%;
+    background-image: url(fotos/pexelsxx.jpg);
+    background-size: cover;
+    transition: all 500ms;
+    
+}
+.card h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 0px;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    position: relative;
+    bottom: 25px;
+}
+.card p{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(200, 200, 200);
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    bottom: 35px;
+    font-family: 'Heebo', sans-serif;
+}
+.descripcion{
+    background-image: url(fotos/peakpx1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+.descripcion p{
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    position: relative;
+    left: 110px;
+    height: 120px;
+    bottom: 620px;
+    margin: 20px;
+    width: 38%;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.578);
+    background-color: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(5px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: 0.9s;
+}
+.descripcion p:hover{
+    transform:  translate(10%) scale(1);
+    
+}
+
+.fotooffice{
+    width: fit-content;
+    position: relative;
+    top:70px;
+    left: 60%;
+}
+.fotooffice img{
+    height:550px;
+    width: 450px;
+}
+.descripcion img{
+    border-radius: 15px;
+}
+#info2{
+    position: relative;
+    bottom: 600px;
+    left: 140px;
+    letter-spacing: 6px;
+    line-height: 30px;
+    width: fit-content;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: rgb(195, 195, 195);
+    text-shadow: 6px 7px 9px rgba(0,0,0,0.9);
+}
+
+.img-pc{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    bottom: 240px; 
+}
+main h2{
+    word-spacing: 10px;
+    position: relative;
+    top: 60px;
+    color: rgb(0, 0, 0);
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+}
+.text p {
+    text-align: center;
+    font-size: 23px;
+    position: relative;
+    top: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    word-spacing: 5px;
+    font-family: 'Heebo', sans-serif;
+}
+.trabajos {
+    z-index: 1;
+    position: relative;
+    top:100px;
+    font-family: 'Heebo', sans-serif;
+}
+.grid3{
+    display: none;
+ }
+.grid{
+    background: url(fotos/peakpx.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 4em;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns: 180px 180px 250px;
+    grid-template-rows: 100px 100px;
+    height: 680px;
+}
+.grid img{
+    margin-top: 150px;
+    height: 180px;
+    width: 280px;
+    position: relative;
+    bottom: 50px;
+    transition: 0.5s;
+    filter: drop-shadow( 25px 48px 30px rgba(0, 0, 0, 0.644));
+}
+.grid img:hover{
+    transform: scale(1.17);
+}
+
+.texto-foto p{
+    font-family: 'Heebo', sans-serif;
+    font-size: large;
+    position: relative;
+    bottom: 40px;
+    line-height: 1;
+    color: #fff;
+}
+.texto-foto h2{
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    position: relative;
+    bottom: 30px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.71);
+}
+.texto-foto{
+    height: 180px;
+    width: 25%;
+    position: relative;
+    padding: 15px;
+    top: 200px;
+    left: 800px;
+    background-color: rgba(177, 177, 177, 0.144);
+    backdrop-filter: blur(3px);
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.62);
+    
+}
+#caja-foto{
+    height: 20px;
+}
+
+
+/****************************************** inicio footer ********************************/
+
+.form-content{
+    background: linear-gradient(50deg, rgba(0, 0, 0, 0.795) 50%, rgba(104, 112, 138, 0.24)), url(fotos/busy-g8929f7fd3_1920.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    height: 500px;
+    }
+.form-content h2{
+    color: #f4f6f9;
+    font-size: 40px;
+    position: relative;
+    bottom: 100px;
+    width: 50%;
+    }       
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    bottom:120px;
+    height: 500px;
+    }       
+label{
+    font-size: 17px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 8px;
+    }       
+input,textarea{
+    padding: 15px 14px;
+    background-color: #cecece;
+    font-size: 15px;
+    color: #f4f6f9;
+    border-radius: 7px;
+    position: relative;
+    }
+:focus{
+    outline: 1px solid #ff0000;
+    }       
+.btn{
+    background-color: #1e92e9;
+    width: 150px;
+    margin-top: 20px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 20px;
+    }       
+.btn:hover{
+    background-color: #369933;
+    color: #000;            
+    }
+#copyrightEtIcons{
+    bottom: 120px;
+    height: 40px;
+    position: relative;
+    }
+#copyrightEtIcons span{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 60%;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/****************************************** fin footer ********************************/
+
+/****************************** keyframe intro **********************************/
+       @keyframes myAnim {
+                0% {
+                    animation-timing-function: ease-in;
+                    opacity: 1;
+                    transform: translateX(-48px);
+                }
+            
+                24% {
+                    opacity: 1;
+                }
+            
+                40% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-26px);
+                }
+            
+                65% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-13px);
+                }
+            
+                82% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-6.5px);
+                }
+            
+                93% {
+                    animation-timing-function: ease-in;
+                    transform: translateX(-4px);
+                }
+            
+                25%,
+                55%,
+                75%,
+                87%,
+                98% {
+                    animation-timing-function: ease-out;
+                    transform: translateX(0px);
+                }
+            
+                100% {
+                    animation-timing-function: ease-out;
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+/****************************** keyframe intro fin ***************************/
+             
+
+
+/*************************** @media notebook 1024 *************************/
+
+@media screen and (max-width:1024px){
+
+    .container__cards{
+        position: relative;
+        top: 350px;
+        left: -30px;
+        width: 350px;
+     }
+     .grid3{
+        display: none;
+     }
+
+     .grid img{
+        width: 250px;
+     }
+
+    .mipresentacionpng img{
+       position: relative;
+       right: 250px;
+       height: 500px;
+       width: 400px;
+       top: 10px;
+       left:-50px;
+    }
+    .mipresentacionpng{
+        width: 200px;
+        
+     }
+     .descripcion p{
+        position: relative;
+        left: 20px;
+        width: 50%;
+     }
+     .fotooffice img{
+        width: 100%;
+     }
+     .fotooffice{
+        width: 39%;
+     }
+     
+     .texto-foto{
+        position: relative;
+        left: 870px;
+        width: 35%;
+     }
+
+     #caja-foto{
+        position: relative;
+        right: 30%;
+     }
+     nav{
+        width: 100vw;
+        
+     }
+     nav ul{
+        width: 90vw;
+     }
+
+    .form-content h2{
+        width: 50%;
+        position: relative;
+        bottom: 90px;
+    }
+
+    form{
+        width: 50%;
+    }
+
+    .img-pc img{
+        position: relative;
+        top: 50px;
+        right: 40px;
+        width: 100%;
+    }
+    #copyrightEtIcons span{
+        width: 80%;
+        
+    }
+
+    .mipresentacionpng {
+        position: absolute;
+        left: 450px;
+    }
+
+}
+
+             
+/************************************ @media tablet *************************/
+
+        @media (max-width:768px){
+            nav a{
+                padding:14px;
+            }
+            .mipresentacionpng img {
+                width: 350px;
+                height: 450px;
+                position: relative;
+                left: -0px;
+                top: -150px;
+                }
+                .mipresentacionpng{
+                    position: relative;
+                    bottom: -0%;
+                    left: 280px;
+                    width: 200px;
+                    height: 200px;
+                }
+                #presentacion{
+                    width: 100%;
+                    height: 500px;
+                }
+                .banner{
+                    width: 100%;
+                    height: 100vh;
+                }
+                .banner h1{
+                    font-size: 30px;
+                
+                }
+                .banner h3{
+                    font-size: 20px;
+                }
+                .banner h4{
+                    font-size: 10px;
+                }
+                .cover__card{
+                    height: 155px;
+                    
+                }
+                #yo img{
+                    position: absolute;
+                    top: 250px;
+                    
+                }
+                .card p{
+                    position: absolute;
+                    top: 300px;
+                    font-size: 13px;
+                    width: 100%;
+                    left: -0px;
+                    top: 220px;
+                    height: 130px;
+                    
+                }
+                .card{
+                    position: relative;
+                    left: 20px;
+                    top: -0px;
+                    width: 250%;
+                    height: 350px;
+                }
+                .card h2{
+                    position: absolute;
+                    top: 150px;
+                    width: 100%;
+                    left: 0px;
+                    font-size: 24px;
+                    height: 30px;
+                    letter-spacing: 2px;
+                }
+                .container__cards{
+                     width: 30%;
+                     position: relative;
+                     top: 250px;
+                     left: -90px;
+                     }
+                .fotooffice{
+                    width: 25%;
+                    position: relative;
+                    top: 90px;
+                     }
+                .fotooffice img{
+                    height: 400px; 
+                    width: 280px;
+                    position: relative;
+                    top: 90px;
+                    left: 10px;
+                }
+                
+                #info2 {
+                    position: relative;
+                    bottom: 430px;
+                }
+
+                .descripcion p{
+                    width: 390px;
+                    height: 100px;
+                    position: relative;
+                    left: 10px;
+                    top: -430px;
+                    font-size: 10.7px;
+                }
+                .trabajos{
+                    position: relative;
+                    top: 120px;
+                    font-size: 48px;
+                    font-weight: 100;
+                }
+                .grid{
+                    display: grid;
+                    grid-template-columns: repeat(2, 5fr);
+                    grid-gap: 115px;
+                    padding: 50px;
+                }
+                .grid3{
+                    display: none;
+                 }
+                .grid img {
+                    z-index: 1;
+                    }
+
+                .grid img:hover{
+                        transform:  translate(10%) scale(1.3);
+                    }
+
+                #caja-foto{
+                    width: 100%;
+                    height: 330px;
+                    position: relative;
+                    right: 90%;
+                    top: 230px;
+                    }
+
+                .texto-foto{ 
+                    position: relative;
+                    left: 137%;
+                    top:220px;
+                    width: 45%;
+                                        
+                    }
+                .texto-foto p{
+                    letter-spacing: 3px;
+                    font-weight: 600;
+                    font-size: medium;
+                }
+                footer h2{
+                    font-size: 30px;
+                }
+                .img-pc img { 
+                    position: relative;
+                    top:150%;
+                    height: 290px;
+                    width: 800px;
+                    }
+
+                input,textarea{
+                    position: relative;
+                    right: 45px;
+                    }
+                textarea{
+                    position: relative;
+                    right: 45px;
+                    width: 220%;
+                    }
+
+                .btn{
+                    position: relative;
+                    align-self: start;
+                    }
+
+                }
+
+        /**************************** @media celurares ***************************/
+
+        @media (max-width:490px){
+        nav{
+            display: none;
+        }
+        .banner h1{
+            font-size: 26px;
+        }
+        .banner h3{
+            font-size: 20px;
+        }
+        .banner h4{
+            font-size: 10px;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            animation: banner 12s infinite linear alternate;
+            background-size: 100% 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes banner{
+            0%, 20%{
+                background-image: url(fotos/1.jpg);
+            }
+            25%, 45%{
+                background-image: url(fotos/2.jpg);
+            }
+            50%, 70%{
+                background-image: url(fotos/3.jpg);
+            }
+            75%, 100%{
+                background-image: url(fotos/4.jpg);
+            }
+        }
+        .container__cards {
+            position: relative;
+            left: 37%;
+            width: 80%;
+            height: 450px;
+        }
+        .container__cards .card{
+            height: 400px;
+            width: 280px;
+        }
+        .cover__card{
+            height: 230px;
+        }
+        .card h2{
+            color: rgb(255, 255, 255);
+            position: relative;
+            top: -25px;
+            width: 300px;
+        }
+        .card p{
+            position: relative;
+            top: -35px;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+        .mipresentacionpng{
+            display: none;
+        }
+        .descripcion p{
+            color: white;
+            letter-spacing: 1px;
+            position: relative;
+            text-align: justify;
+            left: -0px;
+            top: -0px;
+            width: 80%;
+            height: 110px;
+        }
+        .descripcion p:hover{
+            transform: none;
+        }
+        .descripcion{
+            width: 100%;
+
+        }
+        .fotooffice{
+            display: none;
+        }
+        #info2{
+            position: relative;
+            top: -10px;
+            left: 30px;
+            font-size: 14px;
+        }
+
+        
+        .info h1{
+            margin-top: 40px;
+            font-size: 1.9rem;
+        }
+
+        .info h4{
+            margin-top: 30px;
+            font-size: 14px;   
+        }
+
+        .info h3{
+            margin-top: 60px;
+        }
+
+        .grid{
+            display: none;
+        }
+        .grid3{
+            display: grid;
+            grid-template-columns: repeat(1, 6fr);
+            grid-gap: 10px;
+            position: relative;
+            left: 10px;
+            width: fit-content;
+            margin: auto;
+            
+        }
+        .grid3 img{
+            width: 370px;
+            filter: drop-shadow( 12px 33px 15px rgba(0, 0, 0, 0.493));
+        }
+
+        .img-pc img{
+            position: relative;
+            top:170px;
+            left: -30px;
+            height: 160px;
+            width: 430px;
+        }
+        .text p{
+            position: relative;
+            top: 10px;
+            font-size: 5px;
+            color: #23c1c4;
+            
+        }
+        main h2{
+            position: relative;
+            top: 30px;
+            color: #23c1c4;
+            font-size: 27px;
+        }
+
+        .texto-foto p{
+            font-size: 15px;
+            width: 340px;
+            height: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000000;
+        } 
+
+        .texto-foto{
+            position: absolute;
+            width: 390%;
+            height: 250px;
+            margin: auto;
+            top: 130px;
+            background: rgba(199, 199, 199, 0.159);
+            box-sizing: border-box;
+        }
+
+        #caja-foto{
+            position: relative;
+            right: 100px;
+            width: 90px;
+        }
+        .texto-foto h2{
+            font-weight: 800;
+            letter-spacing: 8px;
+            position: relative;
+            top: -40px;
+        }
+        .form-content{
+            height: 950px;
+        }
+
+        .form-content h2{
+            width: auto;
+            position: relative;
+            top: 200px;
+        }
+            
+        .text p{
+            font-size: 17px;
+            color: #000000;
+            }
+        .card h2{
+            font-size: 30px;
+            }
+
+        input,textarea{
+            position: relative;
+            top: 300px;
+            right: 30px;
+            width: 230%;
+            }
+
+        label{
+            width: 130%;
+            position: relative;
+            right: 20px;
+            top: 307px;
+            }
+
+            #copyrightEtIcons{
+                position: relative;
+                top: 270px;
+
+            }
+
+        #copyrightEtIcons span{
+            text-align: center;
+            width: 370px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            
+            }
+
+        .btn{
+            position: relative;
+            align-self: start;
+            }
+        .trabajos{
+            position: relative;
+            top: 40px;
+            font-size: 25px;
+            }
+            main{
+                margin-top: 150px;
+            }
+
+        }
+
+
+
+
+
+
+
+            
+
+            
